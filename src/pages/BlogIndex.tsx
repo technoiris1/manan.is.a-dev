@@ -36,8 +36,7 @@ const BlogIndex = () => {
             My <span className="text-space-accent">Blog</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Thoughts on astrophysics, programming, and my journey as a curious
-            voyager.
+            My thoughts on astrophysics, projects, and my journey.
           </p>
         </div>
 
@@ -67,7 +66,6 @@ const BlogIndex = () => {
               key={post.id}
               className="bg-space-darker bg-opacity-70 backdrop-blur-md border border-space-accent/20 rounded-lg overflow-hidden flex flex-col hover:border-space-accent/50 transition-all duration-300 group h-full"
             >
-              {/* Header section with category and date */}
               <div className="p-6 pb-4">
                 <div className="flex items-center text-sm text-gray-400 mb-3">
                   <span className="bg-space-accent/10 text-space-accent px-2 py-0.5 rounded-full flex items-center">
@@ -83,13 +81,10 @@ const BlogIndex = () => {
                   <Link to={`/blog/${post.slug}`}>{post.title}</Link>
                 </h2>
               </div>
-
-              {/* Main content section - grows to fill available space */}
               <div className="px-6 flex-grow">
                 <p className="text-gray-400">{post.description}</p>
               </div>
 
-              {/* Footer section with read time and button - always at bottom */}
               <div className="px-6 pb-6 pt-4 mt-auto">
                 <div className="flex items-center text-sm text-gray-400 mb-4">
                   <Clock size={12} className="mr-1" /> {post.readtime}
