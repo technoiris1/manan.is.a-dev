@@ -1,5 +1,15 @@
-
-import { Command, Database, Terminal, Braces, Code, Globe, Server, Workflow, Laptop, LucideMoveLeft } from "lucide-react";
+import {
+  Command,
+  Database,
+  Terminal,
+  Braces,
+  Code,
+  Globe,
+  Server,
+  Workflow,
+  Laptop,
+  LucideMoveLeft,
+} from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
@@ -9,22 +19,22 @@ const Skills = () => {
       skills: [
         { name: "Python", level: 90 },
         { name: "JavaScript", level: 90 },
-        { name: "TypeScript", level: 70 },
+        { name: "TypeScript", level: 90 },
         { name: "HTML & CSS", level: 99 },
         { name: "Rust", level: 60 },
-        {name:"GDScript", level:90}
+        { name: "GDScript", level: 90 },
       ],
     },
     {
       title: "Frameworks & Libraries",
       icon: <Braces className="text-space-accent" size={24} />,
       skills: [
-        { name: "React", level: 85 },
-        { name: "Next.js", level: 65 },
+        { name: "React", level: 100 },
+        { name: "Next.js", level: 100 },
         { name: "Svelte", level: 80 },
         { name: "Flask", level: 90 },
         { name: "Django", level: 85 },
-        { name: "Astro", level: 85 }
+        { name: "Astro", level: 85 },
       ],
     },
     {
@@ -35,8 +45,8 @@ const Skills = () => {
         { name: "VS Code", level: 95 },
         { name: "Docker", level: 70 },
         { name: "Slack Apps", level: 85 },
-        { name: "Fusion 360", level: 80 },
-        {name:"Godot", level:85}
+        { name: "Fusion 360", level: 95 },
+        { name: "Godot", level: 90 },
       ],
     },
     {
@@ -48,7 +58,7 @@ const Skills = () => {
         { name: "PostgreSQL", level: 90 },
         { name: "Node.js", level: 85 },
         { name: "RESTful APIs", level: 90 },
-        {name:"MySQL", level:95}
+        { name: "MySQL", level: 95 },
       ],
     },
   ];
@@ -57,7 +67,9 @@ const Skills = () => {
     <div className="min-h-screen pt-24 pb-12 flex flex-col">
       <div className="container mx-auto px-4 flex-grow">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 cosmic-glow">My <span className="text-space-accent">Skills</span></h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 cosmic-glow">
+            My <span className="text-space-accent">Skills</span>
+          </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Technologies and tools I've learned and worked with.
           </p>
@@ -65,15 +77,15 @@ const Skills = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {skillCategories.map((category, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-space-darker bg-opacity-70 backdrop-blur-md border border-space-accent/20 rounded-lg p-6 hover:border-space-accent/50 transition-all duration-300"
             >
               <div className="flex items-center mb-6">
                 <div className="mr-3">{category.icon}</div>
                 <h2 className="text-2xl font-semibold">{category.title}</h2>
               </div>
-              
+
               <div className="space-y-5">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex}>
@@ -82,8 +94,8 @@ const Skills = () => {
                       <span className="text-space-accent">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div 
-                        className="bg-gradient-to-r from-space-accent to-space-purple h-2 rounded-full" 
+                      <div
+                        className="bg-gradient-to-r from-space-accent to-space-purple h-2 rounded-full"
                         style={{ width: `${skill.level}%` }}
                       ></div>
                     </div>
@@ -95,17 +107,24 @@ const Skills = () => {
         </div>
 
         <div className="mt-16 max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center cosmic-glow">Current <span className="text-space-accent">Learning Focus</span></h2>
-          
+          <h2 className="text-3xl font-bold mb-8 text-center cosmic-glow">
+            Current <span className="text-space-accent">Learning Focus</span>
+          </h2>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { name: "Machine Learning", icon: <Command size={24} /> },
               { name: "WebAssembly", icon: <Code size={24} /> },
               { name: "Assembly", icon: <Code size={24} /> },
-              { name: "AWS", icon: <Server size={24} /> }
+              { name: "AWS", icon: <Server size={24} /> },
             ].map((item, index) => (
-              <div key={index} className="bg-space-darker bg-opacity-70 backdrop-blur-md border border-space-accent/20 rounded-lg p-6 text-center hover:border-space-accent/50 transition-all duration-300">
-                <div className="flex justify-center text-space-accent mb-3">{item.icon}</div>
+              <div
+                key={index}
+                className="bg-space-darker bg-opacity-70 backdrop-blur-md border border-space-accent/20 rounded-lg p-6 text-center hover:border-space-accent/50 transition-all duration-300"
+              >
+                <div className="flex justify-center text-space-accent mb-3">
+                  {item.icon}
+                </div>
                 <h3 className="font-medium">{item.name}</h3>
               </div>
             ))}
