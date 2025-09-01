@@ -1,24 +1,32 @@
-
 import { Github, Linkedin, Mail, Code, Link } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="mt-auto border-t border-white/10 py-8 bg-space-darker bg-opacity-70 backdrop-blur-md">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <p className="text-sm text-gray-400 tracking-wider">
-              &copy; {currentYear} <span className="font-bold text-white">Manan Sharma</span>. All rights reserved.
+              &copy; {currentYear}{" "}
+              <span className="font-bold text-white">Manan Sharma</span>. All
+              rights reserved.
             </p>
             <p className="text-xs text-gray-500 mt-2 max-w-md">
-              Exploring the cosmic vastness of code, one project at a time.<br>
-              </br>
-              This website is open-sourced <a href={"https://github.com/Manan-Coder/manan.is.a-dev"} className="underline bold">here</a>!
+              Exploring the cosmic vastness of code, one project at a time.
+              <br></br>
+              This website is open-sourced{" "}
+              <a
+                href={"https://github.com/Manan-Coder/manan.is.a-dev"}
+                className="underline bold"
+              >
+                here
+              </a>
+              !
             </p>
           </div>
-          
+
           <div className="flex flex-col items-center md:items-end">
             <div className="flex space-x-6 mb-4">
               <a
@@ -49,7 +57,7 @@ const Footer = () => {
                 <Code size={18} />
               </a>
               <a
-                href="mailto:manancoder123@.com"
+                href="mailto:manancoder123@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-full"
                 aria-label="Email Me"
               >
@@ -62,7 +70,7 @@ const Footer = () => {
                 Designed with precision in the digital cosmos
               </span>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </footer>
