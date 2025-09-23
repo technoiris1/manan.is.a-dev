@@ -33,7 +33,7 @@ const blogs = [
 ];
 const Home = () => {
   return (
-    <div className="min-h-screen pt-24 pb-12 flex flex-col">
+    <div className="h-full pt-24 pb-12 flex flex-col">
       <div className="container mx-auto px-4 flex-grow">
         {}
         <section className="flex flex-col md:flex-row items-center justify-between py-12 md:py-24">

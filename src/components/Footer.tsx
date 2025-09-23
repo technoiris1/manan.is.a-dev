@@ -18,7 +18,7 @@ const Footer = () => {
               <br></br>
               This website is open-sourced{" "}
               <a
-                href={"https://github.com/Manan-Coder/manan.is.a-dev"}
+                href={"https://github.com/technoiris1/manan.is.a-dev"}
                 className="underline bold"
               >
                 here
@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-end">
             <div className="flex space-x-6 mb-4">
               <a
-                href="https://github.com/Manan-Coder"
+                href="https://github.com/technoiris1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-full"
@@ -48,7 +48,7 @@ const Footer = () => {
                 <Linkedin size={18} />
               </a>
               <a
-                href="https://github.com/Manan-Coder/manan.is.a-dev"
+                href="https://github.com/technoiris1/manan.is.a-dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-full"
