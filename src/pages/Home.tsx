@@ -69,7 +69,7 @@ const Home = () => {
 
           <div className="w-full md:w-2/5 flex justify-center">
             <div className="relative">
-              <Link to={"https://github.com/Manan-Coder/manan.is.a-dev"}>
+              <Link to={"https://github.com/technoiris1/manan.is.a-dev"}>
                 <div className="w-64 h-64 rounded-full bg-space-purple bg-opacity-20 backdrop-blur-xl border border-space-purple/30 flex items-center justify-center animate-float">
                   <Code size={100} className="text-space-accent" />
                 </div>
@@ -82,7 +82,7 @@ const Home = () => {
                   <Rocket size={24} className="text-space-accent" />
                 </div>
               </Link>
-              <Link to={"https://github.com/Manan-Coder"}>
+              <Link to={"https://github.com/technoiris1"}>
                 <div
                   className="absolute -bottom-4 -left-4 w-20 h-20 rounded-full bg-space-nebula bg-opacity-20 backdrop-blur-xl border border-space-nebula/30 flex items-center justify-center animate-float"
                   style={{ animationDelay: "2s" }}
