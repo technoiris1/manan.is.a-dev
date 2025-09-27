@@ -16,6 +16,16 @@ import {
 const Projects = () => {
   const projects = [
     {
+      id: 9,
+      title: "fermet (WIP)",
+      description:
+        "A wine wrapper for macos to run windows applications/games.",
+      tags: ["Wine", "MacOS", "Swift"],
+      icon: <Computer className="text-space-accent" size={32} />,
+      github: "https://github.com/technoiris1/ferment",
+      demo: "https://github.com/technoiris1/ferment/",
+    },
+    {
       id: 0,
       title: "ASTRA-V",
       description:
@@ -32,7 +42,7 @@ const Projects = () => {
         "nomad is a Cartesian 3D printer which folds and turns into a suitcase.",
       tags: ["CAD", "Fusion", "Hardware"],
       icon: <Boxes className="text-space-accent" size={32} />,
-      github: "https://github.com/Manan-Coder/nomad",
+      github: "https://github.com/technoiris1/nomad",
       demo: "https://github.com/technoiris1/nomad",
     },
     {
@@ -41,7 +51,7 @@ const Projects = () => {
       description: "A topdown-cum-platformer RPG game made in Godot.",
       tags: ["GDScript", "Godot", "Scene"],
       icon: <Swords className="text-space-accent" size={32} />,
-      github: "https://github.com/Manan-Coder/devil-s-kitchen",
+      github: "https://github.com/technoiris1/devil-s-kitchen",
       demo: "https://manan-coder.itch.io/devils-kitchen",
     },
     {
@@ -51,7 +61,7 @@ const Projects = () => {
         "This very website, my internet home made with React and styled with tailwind.",
       tags: ["React", "Typescript", "Tailwind"],
       icon: <TentTree className="text-space-accent" size={32} />,
-      github: "https://github.com/Manan-Coder/manan.is.a-dev",
+      github: "https://github.com/technoiris1/manan.is.a-dev",
       demo: "http://manans.loves-being-a.dev/",
     },
     {
@@ -71,7 +81,7 @@ const Projects = () => {
         "A toy programming language, written on the top of Javascript and Python.",
       tags: ["Javascript", "Python", "Regex"],
       icon: <Cpu className="text-space-accent" size={32} />,
-      github: "https://github.com/Manan-Coder/YapScript",
+      github: "https://github.com/technoiris1/YapScript",
       demo: "https://manan-coder.github.io/YapScript/",
     },
     {
@@ -81,7 +91,7 @@ const Projects = () => {
         "A wakatime inspired personal project, which records your stats while you code.",
       tags: ["Rust", "Typescript", "React", "Tailwind", "Chart.js"],
       icon: <Clock className="text-space-accent" size={32} />,
-      github: "https://github.com/Manan-Coder/Lap",
+      github: "https://github.com/technoiris1/Lap",
       demo: "",
     },
     {
